@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mission13</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="container col-8">
+
+    <nav class="navbar col-4">
+        <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+        <a asp-controller="Home" asp-action="AddBowler" class="nav-link">Add Bowler</a>
+    </nav>
+    <div class="col-8">
+
+
+        <div class="row m-1 p-1">
+
+            <div id="teams" class="col-2">
+                <vc:teams></vc:teams>
+            </div>
+
+            <div class="col-6">
+                @RenderBody()
+            </div>
+
+        </div>
+
+        <footer class="modal-footer">Bowl of Footers</footer>
+        <br /><br />
+    </div>
+</body>
+</html>

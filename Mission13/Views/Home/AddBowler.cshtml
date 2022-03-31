@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Movie Form";
+}
+
+@model Mission13.Models.Bowler
+
+<h1>Add a Bowler</h1>
+
+<form method="post" class="form-group">
+    @*<label class="col-form-label" asp-for="MovieID">MovieID:</label>
+        <input id="movieid" asp-for="MovieID">
+        <br>*@
+
+    <div asp-validation-summary="All"></div> @* shows validation summary/lets you know  *@
+
+    <label class="col-form-label" asp-for="BowlerFirstName">First Name:</label>
+    <input id="title" asp-for="BowlerFirstName">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerMiddleInit">Middle Init:</label>
+    <input id="title" asp-for="BowlerMiddleInit">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerLastName">Last Name:</label>
+    <input id="year" asp-for="BowlerLastName">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerAddress">Address:</label>
+    <input id="director" asp-for="BowlerAddress">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerCity">City:</label>
+    <input id="rating" asp-for="BowlerCity">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerState">State:</label>
+    <input id="edited" asp-for="BowlerState">
+    <br>
+
+    <label class="col-form-label" asp-for="BowlerZip">Zip:</label>
+    <input id="lentto" asp-for="BowlerZip"><br>
+
+    <label class="col-form-label" asp-for="BowlerPhoneNumber">Phone Number:</label>
+    <input id="notes" asp-for="BowlerPhoneNumber">
+    <br>
+
+    <label class="col-form-label" asp-for="TeamID">Team ID:</label>
+    <input id="notes" asp-for="TeamID">
+    <br>
+
+    <input class="btn-outline-primary" type="submit" id="btnSend" value="Submit">
+</form>
